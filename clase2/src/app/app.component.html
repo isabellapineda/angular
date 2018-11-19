@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <div id="mostrarAngular" *ngIf="mostrarCursos">
+    <h1>Con Angular</h1>
+    <input type="text" [(ngModel)]="nombre">
+  </div>
+  <div id="mostrarSinAngular">
+    <h1>Sin Angular</h1>
+  </div>
+  <button (click)="mostrar()">Cambiar</button>
+
+  <ul>
+    <li *ngFor="let c of cursos">
+      {{c.nombreCuso c.valor}}
+
+      <button id="eliminar" (click)="eliminar(c)">Eliminar</button>
+    </li>
+    <button id="eliminar" (click)="Agregar()">Agregar</button>
+  </ul>
+  
+</div>
